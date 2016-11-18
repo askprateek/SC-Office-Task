@@ -1,6 +1,7 @@
 import React from "react";
 import Sidebar from './pages/Sidebar'
 import BarData from './store/Bardata';
+import Chart from './chart/Chart';
 
 export default class Layout extends React.Component {
 
@@ -19,17 +20,11 @@ export default class Layout extends React.Component {
           </div>
           <div class="row">
           <div class="col s12">
-            <ul class="tabs">
-              <li class="tab col s3"><a href="#bar">BarChart</a></li>
-              <li class="tab col s3"><a href="#pie">Test 2</a></li>
-            </ul>
+              <Chart />
           </div>
-          <div id="bar" class="col s12">Test 1</div>
-          <div id="pie" class="col s12">Test 2</div>
-        </div>
-
         </div>
       </div>
+    </div>
     </div>
     );
   }

@@ -12,6 +12,12 @@ body{
   color:#fff;
 }
 
+.tabs {
+  overflow-x: hidden;
+}
+.chart{
+  padding: 20px;
+}
 .main{
   padding-left: 22%;
 }
