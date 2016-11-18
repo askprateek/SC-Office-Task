@@ -15,7 +15,7 @@ class Bardata extends EventEmitter{
         x: data.text,
         y: data.value
       });
-
+      
       this.emit('change');
   }
 
