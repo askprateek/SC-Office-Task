@@ -38,3 +38,6 @@ input[type=text]:focus:not([readonly]){
 .btn,.btn:hover{
   box-shadow: none;
 }
+.x text{
+  transform: rotate(-90deg);
+}

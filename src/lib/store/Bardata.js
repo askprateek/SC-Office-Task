@@ -6,8 +6,6 @@ class Bardata extends EventEmitter{
     this.data =
       [
         {x: 'SomethingA', y: 10},
-        {x: 'SomethingB', y: 4},
-        {x: 'SomethingC', y: 3}
       ];
   }
   addData(data){
@@ -15,7 +13,7 @@ class Bardata extends EventEmitter{
         x: data.text,
         y: data.value
       });
-      
+
       this.emit('change');
   }
 
