@@ -1,7 +1,6 @@
 import React from 'react';
 import BarData from '../store/Bardata';
 
-
 export default class Sidebar extends React.Component{
 
   constructor(){
@@ -9,21 +8,14 @@ export default class Sidebar extends React.Component{
     this.state={
       option:['None']
     }
-
   }
-  hitUrl(theUrl)
-  {
-    var xmlHttp = null;
 
-    xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", theUrl, false );
-    xmlHttp.send( null );
-    return xmlHttp.responseText;
-  }
+
 
   setSelectBoxes(e){
     var xmlHttp = null;
     var theUrl = e.target.value;
+    console.log(theUrl.substr(-3));
     xmlHttp = new XMLHttpRequest();
     xmlHttp.open( "GET", theUrl, false );
     xmlHttp.send( null );
@@ -58,11 +50,13 @@ export default class Sidebar extends React.Component{
     // console.log(data,text,value);
 
     for (var i=0; i <data.length; i++ ){
+      if (!isNaN(data[i][value])){
       var x = data[i][text];
       var y = parseInt(data[i][value]);
       // console.log(data[i][text], data[i][value])
       Bardata.addData({x,y});
       // console.log(x,y)
+    }
     }
 
   }

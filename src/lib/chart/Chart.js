@@ -6,7 +6,7 @@ export default class Chart extends React.Component{
 
   constructor() {
     super();
-
+    console.log(Bardata.getData());
     this.state = {
       values : Bardata.getData()
     }
@@ -23,6 +23,7 @@ export default class Chart extends React.Component{
   render(){
     var BarChart = ReactD3.BarChart;
     var PieChart = ReactD3.PieChart;
+
     var tooltipScatter = function(x, y0, y) {
     return `${x} = ${y} `;
   };
@@ -30,15 +31,16 @@ export default class Chart extends React.Component{
      return `${x} = ${y}`;
    }
     var sort = null;
-    // var xScale = d3.scale.linear([0, Bardata.getMax()]);
+    var yScale = d3.scale.linear()
+      .domain([20,0])
+      .range([0,800]);
 
-    // console.log(Bardata.getMax());
     var data = {
       label: 'somethingA',
       values: this.state.values,
     }
     var x= 0;
-    console.log(this.state.values);
+    // console.log(this.state.values);
     if (data.values.length>0){
     return(
       <div class="row">
@@ -55,9 +57,9 @@ export default class Chart extends React.Component{
           <BarChart
             data={data}
             width={800}
-            height={500}
+            height={600}
             tooltipHtml={tooltipScatter}
-            margin={{top: 50, bottom: 50, left: 50, right: 10}} />
+            margin={{top: 50, bottom: 50, left: 50, right: 50}} />
           </div>
         </div>
       </div>
@@ -68,9 +70,9 @@ export default class Chart extends React.Component{
       <PieChart
             data={data}
             width={800}
-            height={500}
+            height={600}
             tooltipHtml={tooltipPie}
-            margin={{top: 50, bottom: 10, left: 100, right: 100}}
+            margin={{top: 50, bottom: 50, left: 50, right: 50}}
             sort={sort}
             />
           </div>

@@ -80,7 +80,7 @@ input[type=text]:focus:not([readonly]){
 	align-items: center;
 }
 .x text{
-  /*transform: rotate(-45deg);*/
+  text-align: justify;
 }
 .json{
   border-top: 2px solid;
