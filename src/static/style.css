@@ -1,11 +1,30 @@
+@keyframes back{
+  0%,100%{
+    background: #fff497;
+  }
+  25%,75%{
+    background: #ebffca;
+  }
+
+}
+html{
+  animation-name: back;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  /*background: #ebffca;*/
+}
 body{
   font-family: 'Source Sans Pro', sans-serif;
 }
-
+nav{
+  box-shadow: none;
+}
 .side-nav{
   width: 20%;
   background: #FFEB3B;
   color: #636363;
+  box-shadow: none;
 }
 .title{
   background: #000;
@@ -18,8 +37,16 @@ body{
 .chart{
   padding: 20px;
 }
+.charts{
+  background: white;
+  border-radius: 30px;
+  border: 5px solid #000;
+}
 .main{
   padding-left: 22%;
+}
+.side-nav a.btn{
+  margin:0px;
 }
 
 input[type='text'], input[type=text].valid{
@@ -36,8 +63,43 @@ input[type=text]:focus:not([readonly]){
 }
 
 .btn,.btn:hover{
+  background: black;
   box-shadow: none;
 }
+.side-nav.fixed a{
+  color:white;
+}
+.tooltip{
+  padding: 5px;
+	border: 2px solid;
+	border-radius: 4px;
+	background-color: black;
+  color: white;
+	opacity:0.7 ;
+	justify-content: center;
+	align-items: center;
+}
 .x text{
-  transform: rotate(-90deg);
+  /*transform: rotate(-45deg);*/
+}
+.json{
+  border-top: 2px solid;
+}
+select{
+  display:inline;
+}
+
+.tabs .indicator {
+  background: #ffeb3b;
+  height: 7px;
+}
+.tabs .tab a{
+  color: #000;
+  font-size: 2em;
+}
+.border{
+  border-bottom: 3px solid black;
+}
+.tabs .tab a:hover{
+  color: #ffeb3b;
 }

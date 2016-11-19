@@ -14,11 +14,11 @@ export default class Layout extends React.Component {
       <Sidebar />
         <div class="main">
           <div class="row">
-            <div class = "col s12">
+            <div class = "col s12 center-align">
               <h1>For the Love of Barcharts and Other charts too</h1>
             </div>
           </div>
-          <div class="row">
+          <div class="row charts">
           <div class="col s12">
               <Chart />
           </div>
