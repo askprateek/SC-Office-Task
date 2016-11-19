@@ -1,10 +1,9 @@
 import React from "react";
 import Sidebar from './pages/Sidebar'
-import BarData from './store/Bardata';
+import Bardata from './store/Bardata';
 import Chart from './chart/Chart';
 
 export default class Layout extends React.Component {
-
 
   render(){
     return (

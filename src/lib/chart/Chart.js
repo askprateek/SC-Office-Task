@@ -26,8 +26,11 @@ export default class Chart extends React.Component{
     var tooltipScatter = function(x, y0, y) {
     return `${x} = ${y} `;
   };
+   var tooltipPie = function(x,y){
+     return `${x} = ${y}`;
+   }
     var sort = null;
-    var xScale = d3.scale.linear([0, Bardata.getMax()]);
+    // var xScale = d3.scale.linear([0, Bardata.getMax()]);
 
     // console.log(Bardata.getMax());
     var data = {
@@ -66,6 +69,7 @@ export default class Chart extends React.Component{
             data={data}
             width={800}
             height={500}
+            tooltipHtml={tooltipPie}
             margin={{top: 50, bottom: 10, left: 100, right: 100}}
             sort={sort}
             />

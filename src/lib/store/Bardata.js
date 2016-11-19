@@ -12,9 +12,6 @@ class Bardata extends EventEmitter{
         x: data.x,
         y: data.y
       });
-      if (this.max < data.value){
-        this.max= data.value;
-      }
 
       this.emit('change');
   }
