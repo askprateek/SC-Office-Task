@@ -93,7 +93,7 @@ value
               <input id="value" type="text" class="validate"></input>
             </div>
             <div class="input-field col s6">
-              <a onClick = {this.addSingleData.bind(this) } class="btn">Add Bar</a>
+              <a onClick = {this.addSingleData.bind(this) } class="btn">Add Data</a>
             </div>
             </div>
           </div>

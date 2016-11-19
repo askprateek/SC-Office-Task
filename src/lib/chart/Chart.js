@@ -46,8 +46,8 @@ export default class Chart extends React.Component{
       <div class="row">
       <div class="col s12 border">
         <ul class="tabs">
-          <li class="tab col s3"><a href="#bar">BarChart</a></li>
-          <li class="tab col s3"><a href="#pie">PieChart</a></li>
+          <li class="tab col s3"><a href="#bar">Bar Chart</a></li>
+          <li class="tab col s3"><a href="#pie">Donut Chart</a></li>
         </ul>
       </div>
       <div id="bar" class="col s12">
@@ -56,7 +56,7 @@ export default class Chart extends React.Component{
           <div class="col s12">
           <BarChart
             data={data}
-            width={800}
+            width={1200}
             height={600}
             tooltipHtml={tooltipScatter}
             margin={{top: 50, bottom: 50, left: 50, right: 50}} />

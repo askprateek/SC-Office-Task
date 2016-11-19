@@ -48,7 +48,9 @@ nav{
 .side-nav a.btn{
   margin:0px;
 }
-
+.side-nav a.btn:hover{
+  background: #F33446;
+}
 input[type='text'], input[type=text].valid{
   border: 2px solid #636363;
   border-radius: 3px;
@@ -68,6 +70,7 @@ input[type=text]:focus:not([readonly]){
 }
 .side-nav.fixed a{
   color:white;
+  font-size: 18px;
 }
 .tooltip{
   padding: 5px;
@@ -102,4 +105,8 @@ select{
 }
 .tabs .tab a:hover{
   color: #ffeb3b;
+}
+
+img{
+  max-width: 6%;
 }

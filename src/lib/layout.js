@@ -14,7 +14,7 @@ export default class Layout extends React.Component {
         <div class="main">
           <div class="row">
             <div class = "col s12 center-align">
-              <h1 class= "thin">For the Love of Barcharts and Other charts too</h1>
+              <h3 class= "thin">For the Love of Barcharts and Other charts too</h3>
             </div>
           </div>
           <div class="row charts">

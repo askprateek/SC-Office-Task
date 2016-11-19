@@ -1,0 +1,38 @@
+[
+	{
+		"Title": "Chappie",
+		"Year": 2015,
+		"imdbRating": 6.9,
+		"Genre": ["Action", "Crime", "Sci-Fi"]
+	},
+	{
+		"Title": "Star Wars: The Force Awakens",
+		"Year": 2015,
+		"imdbRating": 7.3,
+		"Genre": ["Action", "Adventure", "Fantasy"]
+	},
+	{
+		"Title": "Live Free or Die Hard",
+		"Year": 2007,
+		"imdbRating": 7.2,
+		"Genre": ["Action", "Adventure", "Thriller"]
+	},
+	{
+		"Title": "Alien",
+		"Year": 1979,
+		"imdbRating": 8.5,
+		"Genre": ["Horror", "Sci-Fi"]
+	},
+	{
+		"Title": "K-9",
+		"Year": 1989,
+		"imdbRating": 5.9,
+		"Genre": ["Action", "Comedy", "Crime"]
+	},
+	{
+		"Title": "Police Academy",
+		"Year": 1984,
+		"imdbRating": 6.6,
+		"Genre": ["Comedy"]
+	}
+]
